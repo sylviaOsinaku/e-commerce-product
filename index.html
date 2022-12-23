@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Kumbh+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left_nav_div">
+        <img src="images/icon-menu.svg" alt="" class="menu_icon">
+        <img src="images/logo.svg" alt="">
+      </div>
+
+      <div class="middle_nav_div">
+        <img src="images/icon-close.svg" alt="" class="close_icon">
+        <ul class="middle_nav_ul">
+
+          <li class="nav_link">Collections<div class="nav_line"></div>
+          </li>
+
+
+
+          <li class="nav_link">Men<div class="nav_line"></div>
+          </li>
+
+
+
+          <li class="nav_link">Women<div class="nav_line"></div>
+          </li>
+
+
+
+          <li class="nav_link">About<div class="nav_line"></div>
+          </li>
+
+          <li class="nav_link"> Contact <div class="nav_line"></div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="right_div nav">
+        <div class="cart-div">
+          <img src="images/icon-cart.svg" alt="" class="header_icon">
+          <span class="header_num hidden">0</span>
+          <div class="cart_content hidden">
+            <h2 class="cart_text">Cart</h2>
+            <hr class="line-2">
+            <p class="message">Your cart is empty</p>
+            <div class="cart_inner_content">
+              <div class="cart_details_container">
+                <img src="images/image-product-1.jpg" alt="" class="head_cart_img">
+                <div class="cart_calc_details">
+                  <p>Fall Limited Edition Sneakers</p>
+                  <div class="numbers_div">
+                    <div class="number_inner_div"><span class="span_num">$125.00</span><img src="images/icon-close.svg"
+                        alt="" class="times_img"><span class="num_of_item span_num">1</span></div>
+
+                    <span class="total span_num">$0.00</span>
+                  </div>
+                </div>
+                <div><img src="images/icon-delete.svg" alt="" class="delete_icon"></div>
+
+              </div>
+              <button class="check_out_btn the-btn">Checkout</button>
+            </div>
+
+          </div>
+
+        </div>
+        <img src="images/image-avatar.png" alt="avata_img" class="avata_img">
+      </div>
+    </nav>
+    <div class="line">
+      <hr>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="first_section">
+      <div class="desktop_image">
+        <img src="images/image-product-1.jpg" alt="" class="main_image product_img">
+      </div>
+      <div class="slider">
+        <div class="slide slide--1"><img src="images/image-product-1.jpg" alt="" class="product_img product_img--1">
+        </div>
+        <div class="slide slide--2"><img src="images/image-product-2.jpg" alt="" class="product_img product_img--2">
+        </div>
+        <div class="slide slide--3"><img src="images/image-product-3.jpg" alt="" class="product_img product_img--3">
+        </div>
+        <div class="slide slide--4"><img src="images/image-product-4.jpg" alt="" class="product_img"></div>
+        <button class="btn slider__btn slider__btn--left"><img src="images/icon-previous.svg" alt=""></button>
+        <button class="btn slider__btn slider__btn--right"><img src="images/icon-next.svg" alt=""></button>
+      </div>
+      <div class="thumb_section">
+        <div class="thumb_img_div"><img src="images/image-product-1-thumbnail.jpg" alt="" data-thumb="1"
+            class="thumb_img thumb_img--1 thumb-active"></div>
+        <div class="thumb_img_div"><img src="images/image-product-2-thumbnail.jpg" alt="" data-thumb="2"
+            class="thumb_img thumb_img--2"></div>
+        <div class="thumb_img_div"><img src="images/image-product-3-thumbnail.jpg" alt="" data-thumb="3"
+            class="thumb_img thumb_img--3"></div>
+        <div class="thumb_img_div"><img src="images/image-product-4-thumbnail.jpg" alt="" data-thumb="4"
+            class="thumb_img thumb_img--4"></div>
+      </div>
+    </div>
+    <div class="second_section">
+      <h1 class="sneaker_text"> SNEAKERS COMPANY
+        </h2>
+        <h2 class="fall_text">Fall Limited Edition<br> Sneakers
+        </h2>
+        <p class="profile_text"> These low-profile sneakers are your perfect casual wear<br> companion. Featuring a
+          durable rubber outer sole, they’ll<br> withstand everything the weather can offer.
+        </p>
+        <div class="original_price_div"><span class="original_price">$125.00</span>
+          <span class="discount_percent"> 50%</span>
+        </div>
+        <span class="discount_price"> $250.00</span>
+        <div class="main_cart_div">
+          <div class="signs_div"><img src="images/icon-plus.svg" alt="" class="plus_img"><span
+              class="add_to_cart_num">0</span><img src="images/icon-minus.svg" alt="" class="minus_img">
+          </div>
+          <button class="add-to-cart-btn the-btn"><img src="images/icon-cart-btn.svg" alt="" class="cart_icon">Add to
+            cart</button>
+        </div>
+    </div>
+
+  </main>
+  <div class="modal hidden">
+    <img src="images/icon-overlay-close.svg" alt="" class="overlay-close-img">
+    <div class="overlay-slider">
+      <div class="overlay-slide"><img src="images/image-product-1.jpg" alt=""
+          class="product_img product_img--1 overlay-img">
+      </div>
+      <div class="overlay-slide"><img src="images/image-product-2.jpg" alt=""
+          class="product_img product_img--2 overlay-img">
+      </div>
+      <div class="overlay-slide"><img src="images/image-product-3.jpg" alt=""
+          class="product_img product_img--3 overlay-img">
+      </div>
+      <div class="overlay-slide"><img src="images/image-product-4.jpg" alt="" class="product_img"></div>
+      <button class="slider__btn overlay__btn--left"><img src="images/icon-previous.svg" alt=""></button>
+      <button class="slider__btn overlay__btn--right"><img src="images/icon-next.svg" alt=""></button>
+    </div>
+    <div class="thumb_section">
+      <div><img src="images/image-product-1-thumbnail.jpg" alt="" data-thumb="1" class="thumb_img thumb_img--1"></div>
+      <div><img src="images/image-product-2-thumbnail.jpg" alt="" data-thumb="2" class="thumb_img thumb_img--2"></div>
+      <div><img src="images/image-product-3-thumbnail.jpg" alt="" data-thumb="3" class="thumb_img thumb_img--3"></div>
+      <div><img src="images/image-product-4-thumbnail.jpg" alt="" data-thumb="4" class="thumb_img thumb_img--4"></div>
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
+
+  <script src="script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
